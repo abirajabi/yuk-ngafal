@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 import 'package:yuk_ngafal/bindings/login_bindings.dart';
-import 'package:yuk_ngafal/common/palette.dart';
+import 'package:yuk_ngafal/common/custom_swatch.dart';
 import 'package:yuk_ngafal/ui/home_page.dart';
 import 'package:yuk_ngafal/ui/login_page.dart';
 
@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
       return GetMaterialApp(
         title: 'YukNgafal!',
         home: const LoginPage(),
+        theme: ThemeData(primarySwatch: CustomSwatch.celticBlueSwatch),
         debugShowCheckedModeBanner: false,
         getPages: [
           GetPage(name: '/', page: () => const HomePage()),

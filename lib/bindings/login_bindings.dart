@@ -1,9 +1,9 @@
 import 'package:get/get.dart';
-import 'package:yuk_ngafal/controller/login_controller.dart';
+import 'package:yuk_ngafal/auth/auth.dart';
 
 class LoginBindings implements Bindings {
   @override
   void dependencies() {
-    Get.lazyPut(() => LoginController(), fenix: true);
+    Get.lazyPut(() => AuthService(), fenix: true);
   }
 }

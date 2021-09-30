@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:yuk_ngafal/auth/auth.dart';
 import 'package:yuk_ngafal/common/button_style.dart';
 import 'package:yuk_ngafal/common/color_style.dart';
 import 'package:yuk_ngafal/common/text_style.dart';
 import 'package:sizer/sizer.dart';
+import 'package:yuk_ngafal/widgets/google_sign_in_btn.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -116,9 +118,17 @@ class LoginPage extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      ElevatedButton(
-                        child: Text('G'),
-                        onPressed: () {},
+                      FutureBuilder(
+                        future: AuthService.initializeFirebase(),
+                        builder: (context, snapshot) {
+                          if (snapshot.hasError) {
+                            return Text('Error');
+                          } else if (snapshot.connectionState ==
+                              ConnectionState.done) {
+                            return const GoogleSignInButton();
+                          }
+                          return const CircularProgressIndicator();
+                        },
                       ),
                       ElevatedButton(
                         child: Text('F'),

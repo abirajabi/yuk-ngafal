@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "922145341995",
+    "project_id": "yukngafal",
+    "storage_bucket": "yukngafal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922145341995:android:afeaed42434070a12f606e",
+        "android_client_info": {
+          "package_name": "com.example.yuk_ngafal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "922145341995-ca1qe8ouubg4de05ugk28e46jlaiqae4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yuk_ngafal",
+            "certificate_hash": "32edb4279f6edcb3e446207077ca40663eb67982"
+          }
+        },
+        {
+          "client_id": "922145341995-q569pi5bm5koc19n9fg6eotpmi2ff4hl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWm1J1qgZ_eEU8hM_EVxUBhFPy7RMXrQ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "922145341995-q569pi5bm5koc19n9fg6eotpmi2ff4hl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

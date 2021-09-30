@@ -11,6 +11,12 @@ final whiteHeading30 = GoogleFonts.poppins(
   fontWeight: FontWeight.bold,
 );
 
+final whiteHeading16 = GoogleFonts.poppins(
+  color: Colors.white,
+  fontSize: 16.sp,
+  fontWeight: FontWeight.w500,
+);
+
 final celticHeading16 = GoogleFonts.poppins(
   color: celticBlue,
   fontSize: 16.sp,
